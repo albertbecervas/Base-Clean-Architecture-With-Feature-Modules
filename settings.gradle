@@ -1,2 +1,2 @@
-include ':app', ':base', ':feature_sample', ':core'
+include ':app', ':feature_sample', ':core'
 rootProject.name='BaseFeatureModules'
