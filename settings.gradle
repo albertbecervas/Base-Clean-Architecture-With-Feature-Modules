@@ -1,2 +1,5 @@
-include ':app', ':feature_sample', ':core'
-rootProject.name='BaseFeatureModules'
+rootProject.name='Tech-Test-eD'
+include ':app'
+include ':base'
+include ':app-resources'
+include ':network'

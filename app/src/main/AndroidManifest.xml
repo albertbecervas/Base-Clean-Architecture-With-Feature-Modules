@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.abecerra.base_feature_modules">
+    package="com.abecerra.sample_app">
 
     <application
-        android:name=".AppApplication"
+        android:name="com.abecerra.sample_app.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.abecerra.core.scenes.main.presentation.view.MainActivity">
+        <activity android:name="com.abecerra.sample_app.scenes.main.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

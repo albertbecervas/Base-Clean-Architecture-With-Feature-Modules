@@ -23,6 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    kotlinOptions { jvmTarget = "1.8" }
 }
 
 dependencies {
@@ -34,9 +39,13 @@ dependencies {
     implementation appDependencies.androidx_core
     implementation appDependencies.multidex
     implementation appDependencies.androidx_support_legacy
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.recyclerView
 
     def testDependencies = rootProject.ext.testing
     testImplementation testDependencies.junit
     androidTestImplementation testDependencies.android_junit
     androidTestImplementation testDependencies.espresso
+    debugImplementation testDependencies.fragment
+    androidTestImplementation testDependencies.truth
 }
